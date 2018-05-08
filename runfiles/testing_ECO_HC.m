@@ -118,4 +118,5 @@ params.gpu_id = [];                     % Set the GPU id, or leave empty to use 
 params.seq = seq;
 
 % Run tracker
-results = tracker(params);
+results = Mytracker(params);
+% results = tracker(params);
