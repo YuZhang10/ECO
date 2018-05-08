@@ -32,9 +32,9 @@ params.t_global.normalize_dim = true;   % Also normalize with respect to the dim
 
 % Image sample parameters
 params.search_area_shape = 'square';    % The shape of the samples
-params.search_area_scale = 4.0;         % The scaling of the target size to get the search area
-params.min_image_sample_size = 150^2;   % Minimum area of image samples
-params.max_image_sample_size = 200^2;   % Maximum area of image samples
+params.search_area_scale = 2.0;         % The scaling of the target size to get the search area
+params.min_image_sample_size = 20^2;   % Minimum area of image samples
+params.max_image_sample_size = 40^2;   % Maximum area of image samples
 
 % Detection parameters
 params.refinement_iterations = 1;       % Number of iterations used to refine the resulting position in a frame
@@ -43,8 +43,8 @@ params.clamp_position = false;          % Clamp the target position to be inside
 
 % Learning parameters
 params.output_sigma_factor = 1/16;		% Label function sigma
-params.learning_rate = 0.009;	 	 	% Learning rate
-params.nSamples = 30;                   % Maximum number of stored training samples
+params.learning_rate = 0.012;	 	 	% Learning rate
+params.nSamples = 10;                   % Maximum number of stored training samples
 params.sample_replace_strategy = 'lowest_prior';    % Which sample to replace when the memory is full
 params.lt_size = 0;                     % The size of the long-term memory (where all samples have equal weight)
 params.train_gap = 5;                   % The number of intermediate frames with no training (0 corresponds to training every frame)
