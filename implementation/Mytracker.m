@@ -240,6 +240,8 @@ residuals_pcg = [];
 
 % to deal with blocking
 model_update_flag=1;
+
+% run over the images
 while true
     % Read image
     if seq.frame > 0
